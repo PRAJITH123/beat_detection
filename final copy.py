@@ -7,13 +7,13 @@ from pydub import AudioSegment
 print(format('.............This is a program used for beat detection................','^40'))
 
 x = int(input(print('enter 1 if u are giving us a mp3 file,enter 2 if giving us a wav form of audio')))
-'''if x == 1
+if x == 1:
     path = input(print('enter the file location'))
     input = AudioSegment.from_mp3(path)
-    input.export()'''
+    input.export(path,format="wav")
 
-#elif x==2
-path = input(print('enter the audio file location'))
+if x==2:
+    path = input(print('enter the audio file location'))
 
 #reading the audio
 
